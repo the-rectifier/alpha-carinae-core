@@ -10,9 +10,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/cotes2020/jekyll-theme-chirpy"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x00").select { |f|
+  files = IO.popen(['git', 'ls-files', '-z'], 'r', &:read)
+  spec.files = files.split("\x00").select do |f|
     f.match(%r!^((_(includes|layouts|sass|(data\/(locales|origin)))|assets)\/|README|LICENSE)!i)
-  }
+  end
 
   spec.metadata = {
     "bug_tracker_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy/issues",
@@ -31,5 +32,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-archives", "~> 2.2"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
-
 end
