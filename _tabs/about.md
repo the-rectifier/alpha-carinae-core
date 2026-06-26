@@ -11,3 +11,7 @@ Hello everyone, my name is Odysseus, an Electrical and Computer Engineer from [T
 # CV
 
 You can find a link to my resume [here](https://rxresu.me/the-rectifier/anxious-historical-flamingo)
+
+## Misc
+
+I recently bought a Sony α6400 and I am really enjoying it. As such, I launched a photo portfolio to showcase my ~~more than amateur~~ clicks. You can ~~roast~~ visit my portfolio [here](https://portfolio.alpha-carinae.xyz).
